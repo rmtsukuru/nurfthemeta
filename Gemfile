@@ -33,8 +33,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  # Use Passenger as the app server
-  gem 'passenger'
+  # Use Thin as the app server
+  gem 'thin'
 end
 
 group :development, :test do
