@@ -1,6 +1,6 @@
 <h1>Nurf the Meta</h1>
 <% Champion.all.each do |champ| %>
 <span class="champion">
-    <%= image_tag champ.icon_url %>
+    <%= link_to image_tag(champ.icon_url).html_safe, champ %>
 </span>
 <% end %>
